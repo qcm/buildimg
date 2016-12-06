@@ -25,8 +25,7 @@ def getRSAData(fname):
 			elif len(exponent) == 7:
 				exponent = exponent.zfill(8)	
 		else:
-			tmp1 = line.strip(' :\n') 
-			if len(tmp1) == 0: continue
+			tmp1 = line.strip(' \n') 
 			tmp2 = tmp1.split(':')
 			output += tmp2
 	output.pop(0)		
